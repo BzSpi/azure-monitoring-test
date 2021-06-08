@@ -15,7 +15,7 @@ jobs:
       - name: Create ZIP file
         run: |
           sudo npm i -g azure-functions-core-tools@3 --unsafe-perm true
-          func pack --build-native-deps --python -o fame.zip
+          func pack --build-native-deps --python -o fame
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
